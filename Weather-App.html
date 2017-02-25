@@ -1,0 +1,44 @@
+<script src="https://use.fontawesome.com/cf9adc154e.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<script type="text/javascript" src='WeatherApp.js'></script>
+
+<link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="WeatherApp.css">
+
+<div id="opacity-cover">
+
+</div>
+
+<div id="outer-div" class="flex-div row">
+  <div id="main-div" class="flex-div row col-sm-8 col-lg-6">
+ 
+  <h1 id="location-text"></h1>
+  <div class="col-sm-6 col-xs-10">
+    <img id="icon-img" class="img-responsive" onclick="RefreshWeatherData()">
+  </div>
+  <h2 id="summary-text"></h2>
+  
+  <div id="line">
+    <hr>
+  </div>   
+  
+  <div id="info-div"class="flex-div">
+    <div id="temp-div"class="flex-div">
+      <a href="#" onclick="SwitchFormat()"><span id="temp-text"></span></a>
+    </div>
+    
+    <div id="wind-rain-div"class="flex-div">
+      <div id="rain-div">
+        <img src="https://res.cloudinary.com/dzcadzgap/image/upload/v1468070419/chanceOfRain.png">
+        <span id="rain-text"></span>
+      </div>
+      <div id="wind-div">
+        <img src="https://res.cloudinary.com/dzcadzgap/image/upload/v1468069980/wind.png">
+        <a href="#" onclick="SwitchFormat()"><span id="wind-text"></span></a>
+      </div>
+    </div>
+  </div>
+</div>
